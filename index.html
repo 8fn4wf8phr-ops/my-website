@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jacquez Monroe — Web Developer</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#top" class="logo">Jacquez Monroe</a>
+      <nav class="nav">
+        <a href="#about">About</a>
+        <a href="resume/resume.pdf" download>Resume</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section id="top" class="hero">
+      <div class="container">
+        <p class="eyebrow">Hello, I'm</p>
+        <h1>Jacquez Monroe</h1>
+        <p class="hero-subtitle">Web Developer</p>
+        <p class="hero-tagline">I build clean, functional websites and web apps.</p>
+        <div class="hero-actions">
+          <a href="#contact" class="btn btn-primary">Get in touch</a>
+          <a href="#about" class="btn btn-secondary">About me</a>
+          <a href="resume/resume.pdf" class="btn btn-secondary" download>Download Resume</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="about">
+      <div class="container reveal">
+        <h2>About</h2>
+        <p>
+          I'm a web developer focused on building clean, usable websites.
+          I enjoy working across the stack — from styling the smallest
+          details in CSS to wiring up the logic that makes a site actually
+          work. This portfolio itself is one of my projects, built from
+          scratch with plain HTML, CSS, and JavaScript.
+        </p>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <div class="container reveal">
+        <h2>Contact</h2>
+        <p>Want to work together or just say hello? Reach out.</p>
+        <a class="email-link" href="mailto:monroe.juwan@outlook.com">monroe.juwan@outlook.com</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> Jacquez Monroe. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <button id="backToTop" class="back-to-top" aria-label="Back to top">↑</button>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
