@@ -7,6 +7,7 @@
 
 :root {
   --color-bg: #fbf6ef;
+  --color-card: #ffffff;
   --color-text: #3b2a20;
   --color-muted: #7a6857;
   --color-accent: #c1652f;
@@ -166,6 +167,81 @@ h1, h2 {
 .about h2, .contact h2 {
   font-size: 1.75rem;
   margin-bottom: 16px;
+}
+
+/* ---- Projects section ---- */
+.projects {
+  padding: 64px 0;
+  border-top: 1px solid var(--color-border);
+}
+
+.projects h2 {
+  font-size: 1.75rem;
+  margin-bottom: 8px;
+}
+
+.projects-intro {
+  color: var(--color-muted);
+  margin-bottom: 32px;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 24px;
+}
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+  background: var(--color-card);
+  border: 1px solid var(--color-border);
+  border-radius: 14px;
+  padding: 24px;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 24px rgba(59, 42, 32, 0.08);
+}
+
+.project-card h3 {
+  font-size: 1.15rem;
+  margin-bottom: 8px;
+}
+
+.project-card p {
+  color: var(--color-muted);
+  font-size: 0.92rem;
+  margin-bottom: 16px;
+  flex-grow: 1;
+}
+
+.project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 16px;
+}
+
+.project-tags span {
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: var(--color-accent-dark);
+  background: rgba(193, 101, 47, 0.1);
+  padding: 3px 10px;
+  border-radius: 999px;
+}
+
+.project-links {
+  display: flex;
+  gap: 10px;
+}
+
+.project-links .btn {
+  padding: 8px 16px;
+  font-size: 0.85rem;
 }
 
 .about p {
